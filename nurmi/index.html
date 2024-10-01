@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Artistic Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">home</a></li>
+                <li><a href="#gallery" class="nav-link">gallery</a></li>
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1 class="animate__animated animate__fadeIn">Your Art Gallery</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Expressive Art Portfolio</p>
+        </section>
+
+        <section id="gallery">
+            <h2 class="animate__animated animate__fadeIn">Gallery</h2>
+            <div class="masonry-grid">
+                <img src="C:\Users\satog\OneDrive\Desktop\nurmi\resim1.jpg" alt="Artwork 1" class="gallery-img">
+                <img src="C:\Users\satog\OneDrive\Desktop\nurmi\resim2.jpg" alt="Artwork 2" class="gallery-img">
+                <img src="C:\Users\satog\OneDrive\Desktop\nurmi\resim 3.jpg" alt="Artwork 3" class="gallery-img">
+                <img src="C:\Users\satog\OneDrive\Desktop\nurmi\resim4.jpg" alt="Artwork 4" class="gallery-img">
+                <img src="C:\Users\satog\OneDrive\Desktop\nurmi\resim5.jpg" alt="Artwork 5" class="gallery-img">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="animate__animated animate__fadeIn">About the Artist</h2>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Your artist statement goes here. Describe your artistic vision, inspirations, and what drives your creative process.</p>
+        </section>
+
+        <section id="contact">
+            <h2 class="animate__animated animate__fadeIn">Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" id="name" required placeholder="Your Name" class="animate__animated animate__fadeInUp">
+                <input type="email" id="email" required placeholder="Your Email" class="animate__animated animate__fadeInUp animate__delay-1s">
+                <textarea id="message" required placeholder="Your Message" class="animate__animated animate__fadeInUp animate__delay-2s"></textarea>
+                <button type="submit" class="animate__animated animate__fadeInUp animate__delay-3s">send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
